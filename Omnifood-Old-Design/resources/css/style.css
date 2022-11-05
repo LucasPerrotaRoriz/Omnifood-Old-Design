@@ -98,6 +98,7 @@ html {
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
+  color: var(--grey-text-color);
 }
 
 a {
@@ -112,10 +113,37 @@ section {
   display: none;
 }
 
-.section-heading {
+.hero__heading,
+.section-heading,
+.tertiary-heading {
   font-weight: 300;
   text-transform: uppercase;
-  color: var(--darkgrey-text-color);
+  color: var(--grey-text-color);
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.section-heading:after {
+  content: '';
+  margin: 1.5rem auto;
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: var(--main-color);
+}
+
+.tertiary-heading {
+  margin-bottom: .5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  grid-gap: 1.5rem;
+  row-gap: 1.5rem;
 }
 
 /* ########## HERO SECTION ######### */
@@ -182,6 +210,7 @@ section {
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 1.25rem;
+  color: inherit;
 }
 
 .hero__btn-container {
@@ -189,6 +218,28 @@ section {
   flex-direction: column;
   align-items: start;
   gap: .5rem;
+}
+
+/* ########## FEATURES SECTION ######### */
+.features__copyright,
+.feature__text {
+  font-size: 1rem;
+}
+
+.features__copyright {
+  display: inline-block;
+  width: 100%;
+  margin: .8rem auto 2.5rem;
+}
+
+.feature__icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+.feature__box {
+  margin-inline: 1rem;
 }
 
 /* ########## BUTTONS ######### */
