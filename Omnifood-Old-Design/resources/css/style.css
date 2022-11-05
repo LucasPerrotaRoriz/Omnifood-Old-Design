@@ -1,4 +1,18 @@
+:root {
+  --main-color: rgb(230, 126, 34);
+  --hover-button-color: rgb(207, 113, 31);
 
+  --white-text-color: rgb(255, 255, 255);
+  --grey-text-color: rgb(85, 85, 85);
+  --darkgrey-text-color: rgb(136, 136, 136);
+
+  --background-light-grey: rgb(244, 244, 244);
+  --background-grey: rgb(252, 252, 252);
+  --background-dark: rgb(51, 51, 51);
+
+  --dark-gradient: linear-gradient(rgba(0,0,0,.7), 
+  rgba(0,0,0,.7));
+}
 
 /* ########## RESET ######### */
 /* Box sizing rules */
@@ -77,3 +91,26 @@ select {
     scroll-behavior: auto !important;
   }
 }
+/* ########## END OF RESET ######### */
+
+html {
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* ########## HERO SECTION ######### */
+
+
+
+.hero__logo {
+  height: 3rem;
+  width: 3rem;
+}
+
+
