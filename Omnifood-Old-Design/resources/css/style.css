@@ -401,9 +401,70 @@ section {
   font-size: .95rem;
 }
 
+/* ########## PLAN SECTION ######### */
+.plans {
+  background-color: var(--background-light-grey);
+}
+
+.plan {
+  width: 90%;
+  margin-left: 1.5rem;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+  background-color: var(--white-text-color);
+}
+
+.plan__header {
+  padding: 1rem;
+  background-color: var(--background-grey);
+}
+
+.plan__type {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.plan__price {
+  font-size: 2.5rem;
+  color: var(--main-color);
+}
+
+.plan__price span {
+  font-size: 1rem;
+}
+
+.plan__info {
+  font-size: .8rem;
+}
+
+.plan__list {
+  width: 100%;
+  list-style: none;
+  padding: 2rem 0;
+  
+  border-top: 1px solid rgb(232, 232, 232);
+  border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+.plan__icon {
+  font-size: .7rem;
+  padding-right: .5rem;
+  color: var(--main-color);
+}
+
+.plan__item {
+  margin-left: 1rem;
+  padding: .3rem 0;
+}
+
+.plan div {
+  text-align: center;
+  margin-top: 2rem;
+}
+
 /* ########## BUTTONS ######### */
 .btn {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
   padding: .5rem 1rem;
   border: 2px solid transparent;
@@ -431,3 +492,14 @@ section {
   color: var(--white-text-color);
 }
 
+.btn--ghost {
+  border: 1px solid var(--main-color);
+  background-color: var(--white-text-color);
+  color: var(--main-color);
+}
+
+.btn--ghost:hover {
+  border: 2px solid transparent;
+  background-color: var(--main-color);
+  color: var(--white-text-color);
+}
