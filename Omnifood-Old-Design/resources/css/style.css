@@ -242,6 +242,29 @@ section {
   margin-inline: 1rem;
 }
 
+/* ########## GALLERY SECTION ######### */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery__img {
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+.gallery__img img {
+  opacity: .7;
+  transform: scale(1.15);
+  transition: all .4s;
+}
+
+.gallery__img img:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
 /* ########## BUTTONS ######### */
 .btn {
   font-size: 1.25rem;
