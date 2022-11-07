@@ -438,7 +438,7 @@ section {
 
 /* ########## PLAN SECTION ######### */
 .plans {
-  background-color: var(--lightgrey-color-1);
+  background-color: var(--lightgrey-color-2);
 }
 
 .plan {
@@ -639,4 +639,101 @@ textarea {
 .btn--form {
   font-weight: 300;
   padding: 0.5rem 2rem;
+}
+
+/* ########## MEDIA QUERIES ######### */
+@media only screen and (min-width: 635px) {
+  .hero__btn-container {
+    flex-direction: row;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .app__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8rem;
+  }
+
+  .app__phone {
+    width: 300px;
+  }
+
+  .app__step {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  .signup__form {
+    margin-left: 17%;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .hamburger {
+    display: none;
+  }
+
+  .hero__navigation {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    list-style-type: none;
+    text-transform: uppercase;
+  }
+
+  .hero__navigation a {
+    color: inherit;
+    transition: all .4s;
+  }
+
+  .hero__navigation a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: var(--main-color);
+    
+  }
+
+  .features__copyright p{
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .signup__form {
+    margin-left: 25%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .app__container {
+    width: 80%;
+    margin-left: 20rem;
+  }
+
+  .app__phone {
+    margin-right: -10rem;
+  }
+
+  .app__step {
+    width: 50%;
+  }
+
+  .signup__form {
+    margin-left: 30%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .app__phone {
+    margin-right: -15rem;
+  }
+
+  .signup__form {
+    margin-left: 35%;
+  }
 }

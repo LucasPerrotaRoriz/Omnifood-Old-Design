@@ -26,16 +26,16 @@
           alt="Omnifood logo"
         />
         <ul class="hero__navigation">
-          <li class="hero_item">
-            <a href="#features" class="hero_link">Food delivery</a>
+          <li class="hero__item">
+            <a href="#features" class="hero__link">Food delivery</a>
           </li>
           <li class="hero__item">
             <a href="#app" class="hero__link">How it works</a>
           </li>
           <li class="hero__item">
-            <a href="#cities" class="hero__link">Our cities</a>
+            <a href="#city" class="hero__link">Our cities</a>
           </li>
-          <li class="hero__iteem">
+          <li class="hero__item">
             <a href="#signup" class="hero__link">Sign up</a>
           </li>
         </ul>
@@ -61,7 +61,7 @@
       </div>
     </header>
 
-    <section class="features">
+    <section id="features" class="features">
       <h2 class="section-heading">Get food fast — not fast food.</h2>
       <div class="features__copyright">
         <p>
@@ -140,7 +140,7 @@
       </figure>
     </section>
 
-    <section class="app">
+    <section id="app" class="app">
       <h2 class="section-heading">How it works — simple as 1, 2, 3</h2>
       <div class="app__container">
         <img
@@ -171,15 +171,16 @@
               Enjoy your meal after less than 20 minutes. See you the next time!
             </p>
           </div>
-        </div>
-        <div class="app__img">
-          <img src="resources/img/download-app.svg" alt="iOS app" />
-          <img src="resources/img/download-app-android.png" alt="Android app" />
+
+          <div class="app__img">
+            <img src="resources/img/download-app.svg" alt="iOS app" />
+            <img src="resources/img/download-app-android.png" alt="Android app" />
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="cities">
+    <section id="city" class="cities">
       <h2 class="section-heading">We're currently in these cities</h2>
 
       <div class="cities__container grid grid-2">
@@ -422,7 +423,7 @@
       </div>
     </section>
 
-    <section class="signup">
+    <section id="signup" class="signup">
       <h2 class="section-heading">We're happy to hear from you</h2>
       <form action="" class="signup__form">
         <label for="name">Name</label>
